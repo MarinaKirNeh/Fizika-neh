@@ -1,0 +1,124 @@
+*, :after,:before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+}
+.header,
+.information {
+	width: 100%;
+	color: #fff;
+	font-size: 20px;
+}
+.header-menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items:flex-end;
+	padding: 10px;
+	box-sizing: border-box;
+	background: #5465;
+}
+
+.header-menu__list {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.header-menu__list > li {
+	position: relative;
+	display: inline-block;
+}
+.header-menu__list li {
+	padding: 10px;
+	list-style: none;
+}
+.header-menu__list a {
+	text-decoration: none;
+	color: #fff;
+}
+.header-menu__list--menu {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left:0px;
+	padding: 0px;
+	width: 230px;
+	border-radius: 10px;
+
+}
+.header-menu__list--menu a {
+	text-decoration: none;
+	color: #fff;
+}
+.header-menu__list--menu li {
+	padding: 12px;
+}
+.header-menu__list > li:hover .header-menu__list--menu {
+	display: block;
+	z-index: 100;
+	color: #000;
+	background: #5465;
+	
+}
+.header-img {
+	background: url("./img/fizika-header.jpg") no-repeat;
+	-moz-background-size: 100%; 
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%;
+	background-size: 100%;
+	height: 500px;
+	
+}
+.information {
+	padding-top: 15%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: #fff;
+
+
+}
+.information-sidebar {
+	width: 25%;
+	padding: 15px;
+	font-size: 17px;
+	text-align: left;
+	background: #fff;
+	color: #000;
+}
+.information-content {
+	font-size: 20px;
+	color: #000;
+	text-align: left;
+	padding: 15px;
+	width: 45%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+.information-sidebar__article {
+	border-bottom:1px solid rgba(166,164,164,.7);
+	padding-bottom:10px;
+}
+.information-content__text {
+	border-bottom: 1px solid rgba(166,164,164,.7);
+	padding-bottom:10px;
+
+}
+.sidebarright {
+	border-left: 1px solid rgba(166,164,164,.7);
+
+}
+.sidebarleft {
+	border-right: 1px solid rgba(166,164,164,.7);
+}
